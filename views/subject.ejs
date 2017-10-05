@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Subjects</title>
+  </head>
+  <body>
+    <h1>Subjects</h1>
+    <a href="/">Home</a>
+    <a href="teacher">Teachers</a>
+    <a href="subject">Subjects</a>
+    <table>
+      <tr>
+        <th>id</th>
+        <th>subject_name</th>
+      </tr>
+      <%for(var i = 0; i < dataSubjects.length; i++) {%>
+      <tr>
+        <td><%=dataSubjects[i].id%></td>
+        <td><%=dataSubjects[i].subject_name%></td>
+      </tr>
+      <%}%>
+    </table>
+  </body>
+</html>
