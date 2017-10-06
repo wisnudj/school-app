@@ -5,6 +5,8 @@
     <title>Students</title>
   </head>
   <body>
+    <h1>Student</h1>
+    <a href="/student/add">add Students</a>
     <a href="/">Home</a>
     <a href="teacher">Teachers</a>
     <a href="subject">Subjects</a>
@@ -22,6 +24,8 @@
           <td><%=dataStudent[i].first_name%></td>
           <td><%=dataStudent[i].last_name%></td>
           <td><%=dataStudent[i].email%></td>
+          <td><a href="/student/edit/<%=dataStudent[i].id%>">edit</a></td>
+          <td><a href="/student/delete/<%=dataStudent[i].id%>">delete</a></td>
         </tr>
       <%}%>
     </table>

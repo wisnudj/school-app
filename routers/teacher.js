@@ -9,4 +9,7 @@ router.get('/',(req, res)=>{
   res.render('teacher',{dataTeachers:dataTeachers});
   })
 })
+
+
+
 module.exports = router;
