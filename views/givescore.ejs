@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%=title%></title>
+  </head>
+  <body>
+    <h1><%=title%></h1>
+    <p>Student Name: <%=dataSubjectStudent[0].Student.first_name%></p>
+    <p>Subject Name:<%=dataSubjectStudent[0].Subject.subject_name%></p>
+    <p>score:</p>
+    <form action="/subject/<%=dataSubjectStudent[0].id%>/givescore" method="post">
+      <input type="input" name="score" placeholder="ex: 69">
+      <input type="submit" value="submit">
+    </form>
+  </body>
+</html>

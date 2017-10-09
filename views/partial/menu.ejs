@@ -1,0 +1,18 @@
+<% if(session.hasOwnProperty('role')){
+  if(session.role === 'teacher'){%>
+    <a href="/index">Home</a>
+    <a href="/student">Student</a>
+    <a href="/logout">Logout</a>
+  <%} else if(session.role === 'academic'){%>
+    <a href="/index">Home</a>
+    <a href="/subject">Subject</a>
+    <a href="/student">Student</a>
+    <a href="/logout">Logout</a>
+  <%} if(session.role === 'headmaster'){%>
+    <a href="/index">Home</a>
+    <a href="/teacher">Teacher</a>
+    <a href="/subject">Subject</a>
+    <a href="/student">Student</a>
+    <a href="/logout">Logout</a>
+<%  }
+}%>
