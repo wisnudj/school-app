@@ -25,7 +25,7 @@ app.use('/student', student);
 app.use('/logout', logout)
 app.use('/signup', signup)
 
-
-app.listen(3000,()=>{
+app.listen(process.env.PORT || '3000')
+/*app.listen(3000,()=>{
   console.log('Jalan port 3000');
-})
+}) */
