@@ -4,26 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wisnudj/school-app.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/wisnudj/school-app/issues"
   },
   "homepage": "https://github.com/wisnudj/school-app#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.7",
-    "express": "^4.16.1",
-    "express-session": "^1.15.6",
-    "pg": "^7.3.0",
-    "sequelize": "^4.13.5",
-    "sequelize-cli": "^3.0.0"
+    "@prisma/client": "^6.7.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "winston": "^3.17.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
+    "@types/express": "^5.0.1",
+    "babel-jest": "^29.7.0",
+    "prisma": "^6.7.0",
+    "typescript": "^5.8.3"
   }
 }
