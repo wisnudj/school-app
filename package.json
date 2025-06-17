@@ -2,9 +2,13 @@
   "name": "school-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "watch": "tsc --watch",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -20,8 +24,13 @@
   "homepage": "https://github.com/wisnudj/school-app#readme",
   "dependencies": {
     "@prisma/client": "^6.7.0",
+    "connect-flash": "^0.1.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "pino": "^9.7.0",
+    "pino-http": "^10.5.0",
+    "pino-pretty": "^13.0.0",
     "winston": "^3.17.0",
     "zod": "^3.24.4"
   },
@@ -31,6 +40,7 @@
     "@types/express": "^5.0.1",
     "babel-jest": "^29.7.0",
     "prisma": "^6.7.0",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
   }
 }
